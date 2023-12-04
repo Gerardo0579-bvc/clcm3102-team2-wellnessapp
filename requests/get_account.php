@@ -4,10 +4,10 @@
 // $password = "password";
 // $database = "fitness";
 
-$servername = $_ENV['servername'];
-$username = $_ENV['username'];
-$password = $_ENV['password'];
-$database = $_ENV['database'];
+$servername = $_SERVER['servername'];
+$username = $_SERVER['username'];
+$password = $_SERVER['password'];
+$database = $_SERVER['database'];
 
 
 $conn = new mysqli($servername, $username, $password, $database);
