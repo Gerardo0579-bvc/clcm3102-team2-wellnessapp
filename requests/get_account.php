@@ -1,13 +1,13 @@
 <?php
-// $servername = $_SERVER["servername"];
-// $username = $_SERVER["username"];
-// $password = $_SERVER["password"];
-// $database = $_SERVER["database"];
+// $servername = "localhost";
+// $username = "team2_user";
+// $password = "password";
+// $database = "fitness";
 
-$servername = "localhost";
-$username = "team2_user";
-$password = "password";
-$database = "fitness";
+$servername = $_ENV['servername'];
+$username = $_ENV['username'];
+$password = $_ENV['password'];
+$database = $_ENV['database'];
 
 
 $conn = new mysqli($servername, $username, $password, $database);
