@@ -1,5 +1,5 @@
 <div id="home-wrapper">
-    <h1>Wellness Together Canada</h1>
+    <h1>Calgary Wellness</h1>
 
     <ul class="thumbs">
         <li id="thumb-1" class="thumb-active" onClick="thumbClicked('thumb-1')"><a href="#slide-1"><span>Benefits</span></a></li>
@@ -51,7 +51,7 @@
         </li>
     </ul>
     <footer>
-        <p>&copy; 2023 Wellness Together Canada</p>
+        <p>&copy; 2023 Calgary Wellness</p>
     </footer>
 </div>
 
