@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
-    <title>Wellness App</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Calgary Wellness</title>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <nav class="top-menu">
             <div class="logo">
                 <a href="index.php?page=home">
-                    Wellness app
+                    <img src="images/favicon.ico" alt="calgary wellness logo" width="60px" height="60px"> Calgary Wellness
                 </a>
             </div>
             <ul class="menu">
@@ -30,13 +31,10 @@
                 <li class="menu-item">
                     <?php
                     if (isset($_COOKIE['user_verified'])) {
-                        echo '<a href="index.php?page=account">
-                        Account
-                    </a>';
+                        echo '<a href="index.php?page=account">Account</a>';
+                        echo $_ENV['servername'];
                     } else {
-                        echo '<a href="index.php?page=login">
-                        Sign in!
-                    </a>';
+                        echo '<a href="index.php?page=login">Sign in!</a>';
                     }
                     ?>
                 </li>
@@ -90,7 +88,7 @@
                         include('routines/routines.php');
                     }
                 } elseif ($page == 'social') {
-                    include('social.php');
+                    include('social/social.php');
                 } elseif ($page == 'login') {
                     include('account/login.php');
                 } elseif ($page == 'logout') {
